@@ -1,0 +1,52 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.title {
+    font-family: Arial;
+    font-size: clamp(32px, 6vw, 65px);
+    font-weight: 700;
+}
+
+.subtitle {
+    background-color: #d6ff38;
+    font-family: Arial;
+    font-size: clamp(16px, 2.5vw, 22px);
+    margin: 10px 0 70px;
+    text-align: center;
+    width: 350px;
+    max-width: 90%;
+}
+
+.gallery {
+    display: flex;
+}
+
+.gallery img:nth-child(odd) {
+    width: 25vw;
+    object-fit: cover;
+}
+
+.gallery img:nth-child(even) {
+    width: 50vw;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery img:nth-child(1) {
+        width: 90vw;
+    }
+
+    .gallery img:nth-child(2),
+    .gallery img:nth-child(3) {
+        display: none;
+    }
+}
