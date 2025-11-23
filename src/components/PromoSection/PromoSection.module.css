@@ -1,0 +1,44 @@
+.sale {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to top, #d6ff38, white);
+}
+
+.textBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 62%;
+    font-family: Arial;
+    gap: 20px;
+}
+
+.lightning {
+    width: 80px;
+}
+
+.discount {
+    font-size: 155px;
+}
+
+@media (max-width: 900px) {
+    .sale {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .textBlock {
+        width: 100%;
+    }
+
+    .image {
+        width: 100%;
+        margin: 30px auto 0;
+    }
+
+    .discount {
+        font-size: 20vw;
+    }
+}

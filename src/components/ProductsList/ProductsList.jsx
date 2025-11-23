@@ -1,5 +1,6 @@
 import data from '../../data/products.json';
 import ProductCard from './ProductCard';
+import styles from './ProductsList.module.css';
 
 const ProductsList = ({ productsCategory  }) => {
     const filteredProducts = (() => {
@@ -23,7 +24,7 @@ const ProductsList = ({ productsCategory  }) => {
     }
 
     return (
-        <section className="products_list">
+        <section className={styles.productsList} aria-label={`Lista produktów: ${productsCategory || 'wszystkie'}`}>
             {filteredProducts.map(product => (
                 <ProductCard key={product.id} product={product} />
             ))}

@@ -2,15 +2,18 @@ import { createRoot } from 'react-dom/client'
 import Home from './pages/Home';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
+import RootLayout from './layouts/RootLayout';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />
-  },
-  {
-    path: "/product/:productId",
-    element: <p> na razie brak </p>
+    element: <RootLayout />,
+    children: [
+      {
+        index: true,
+        element: <Home />
+      }
+    ]
   }
 ])
 

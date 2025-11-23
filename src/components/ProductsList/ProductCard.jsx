@@ -6,6 +6,7 @@ const ProductCard = ({ product }) => {
         <Link
             to={`/product/${product.id}`}
             className={styles.productCard}
+            aria-label={`Zobacz szczegóły produktu ${product.name}`}
         >
             <figure className={styles.figure}>
                 <div className={styles.imageWrapper}>
@@ -22,7 +23,7 @@ const ProductCard = ({ product }) => {
                     )}
                 </div>
 
-                <figcaption className={styles.info}>
+                <figcaption className={styles.productInfo}>
                     <span>{product.name}</span>
                     <span>{product.price} zł</span>
                 </figcaption>

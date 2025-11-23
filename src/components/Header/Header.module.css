@@ -5,7 +5,8 @@
     background-color: black;
     height: 40px;
     color: white;
-    font: 15px Helvetica, sans-serif;
+    font-size: 15px;
+    font-family: Helvetica, sans-serif;
 }
 
 .navbar {
@@ -20,7 +21,9 @@
     align-items: center;
     background-color: #d6ff38;
     border-right: solid #000 1px;
-    font: 600 24px 'Poppins';
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 600;
     text-decoration: none;
     color: black;
     margin-right: auto;
@@ -67,7 +70,7 @@
 @media (max-width: 768px) {
     .navbarLinks {
         display: none;
-    }    
+    }
 
     .cartButton {
         display: none;

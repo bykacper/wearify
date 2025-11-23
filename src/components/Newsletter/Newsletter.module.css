@@ -1,0 +1,25 @@
+.newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.newsletter button {
+    background-color: transparent;
+    font-family: Arial;
+    font-size: clamp(17px, 4vw, 41px);
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+}
+
+.content {
+    text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+    .newsletter {
+        height: 75px;
+    }
+}
