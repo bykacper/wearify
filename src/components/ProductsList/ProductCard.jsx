@@ -4,7 +4,7 @@ import styles from "./ProductsList.module.css";
 const ProductCard = ({ product }) => {
     return (
         <Link
-            to={`/product/${product.id}`}
+            to={`${product.id}`}
             className={styles.productCard}
             aria-label={`Zobacz szczegóły produktu ${product.name}`}
         >
