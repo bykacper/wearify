@@ -5,7 +5,7 @@
     height: 150px;
 }
 
-.newsletter button {
+.changeModalVisibilityButton {
     background-color: transparent;
     font-family: Arial;
     font-size: clamp(17px, 4vw, 41px);
@@ -17,6 +17,43 @@
 .content {
     text-decoration: underline;
 }
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: min-content;
+    background-color: white;
+    z-index: 10;
+}
+
+.closeWrapper {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #d6ff38;
+    height: 70px;
+    padding-inline: 20px;
+}
+
+.closeButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    font-size: 25px;
+    padding: 20px;
+    border-radius: 100%;
+}
+
+.newsletterForm {
+    display: flex;
+}
+
 
 @media (max-width: 800px) {
     .newsletter {
