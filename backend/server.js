@@ -10,7 +10,7 @@ const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
         user: "kgoluchowski112@gmail.com",
-        pass: "czxq mpct slcl mhcy",
+        pass: "czxq mpct slcl mhcy", // wkleic do .env
     },
 });
 
@@ -25,10 +25,8 @@ app.post("/api/newsletter", async (req, res) => {
             text: `Hej ${name}, dziękujemy za zapis do newslettera Wearify`,
         });
 
-        res.json({ message: "Email wysłany pomyślnie" });
     } catch (error) {
         console.error(error);
-        res.status(500).json({ message: "Nie udało się wysłać maila." });
     }
 });
 
