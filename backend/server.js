@@ -33,5 +33,5 @@ app.post("/api/newsletter", async (req, res) => {
 });
 
 app.listen(4000, () => {
-    console.log("🔥 API działa na http://localhost:4000");
+    console.log("http://localhost:4000");
 });
